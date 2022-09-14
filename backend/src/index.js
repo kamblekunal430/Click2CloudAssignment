@@ -1,11 +1,14 @@
 const express = require("express");
 const axios = require("axios");
 const config = require("config");
+const cors = require("cors");
+
 const PORT = config.get("PORT");
 const url = config.get("COVID_DATA_URL");
 
 const app = express();
 
+app.use(cors());
 
 app.get("/", function (req, res) {
   axios
