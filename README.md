@@ -7,8 +7,8 @@ Open-Source API: https://data.covid19india.org/state_district_wise.json
 
 Running Frontend App Command - Runs application in port 4200
 ---------------------------------------------------------------
-cd frontend && sudo npm start
+cd frontend && npm install && npm start
 
 Running Backend App Command - Runs application in port 8000
 ---------------------------------------------------------------
-cd backend && npm start
+cd backend && npm install && npm start
