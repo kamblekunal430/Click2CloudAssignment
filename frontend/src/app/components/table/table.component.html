@@ -1,0 +1,27 @@
+<div class="container p-5" *ngIf="showTable">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Active Cases</th>
+        <th scope="col">Confirmed Cases</th>
+        <th scope="col">Deceased Cases</th>
+        <th scope="col">Migrated Other Cases</th>
+        <th scope="col">Recovered Cases</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{districtData.active}}</td>
+        <td>{{districtData.confirmed}}</td>
+        <td>{{districtData.deceased}}</td>
+        <td>{{districtData.migratedother}}</td>
+        <td>{{districtData.recovered}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <div *ngIf = "districtData.notes?true:false" class="p-2">
+    <b>Note: </b>{{districtData.notes}}
+  </div>
+</div>
