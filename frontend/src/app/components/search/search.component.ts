@@ -24,10 +24,12 @@ export class SearchComponent implements OnInit {
 
   }
 
+  // Method to get the district names
   getDistricts(){
     this.districts = Object.keys(this.covidData.data[this.selectedState].districtData)
   }
 
+  // Method to show the covid stats based on the input
   onClickSubmit(){
     this.districtData = this.covidData.data[this.selectedState].districtData[this.selectedDistrict]
     console.log("District Data",this.districtData);
