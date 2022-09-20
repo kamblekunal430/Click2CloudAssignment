@@ -1,4 +1,4 @@
-# Click2CloudAssignment
+# Covid-19 Tracker
 A Covid Tracker with API for COVID-19 stats and patient tracing in India.
 
 Dashboard based on Covid-19 tracker which shows State and District data.
